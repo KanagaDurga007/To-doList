@@ -1,29 +1,19 @@
 <html>
     <title>To-Do List</title>
     <head>
-        <div style="text-align:center">
-            <h1>Tasks</h1>
-        </div>
+        <h1 style="text-align:center">Tasks</h1>
     </head>
     <body>
-        <div id="div1" style="text-align:center">
-        <textarea id="text1" rows="10" cols="50"></textarea>
-        <button id="btn1" style="vertical-align:top" onclick="addTask()">Add Task</button>
+        <div id="div1" style="text-align: center">
+            <textarea id="text1" rows="10" cols="50"></textarea>
+            <button id="btn1" style="vertical-align:top" onclick="addTask()">Add Task</button>
         </div>
-        <div id="div2" style="test-align:center">
-            <li id="taskList" style="text-align:center">TaskList</li>
+        <div id="div2" style="text-align:center">
+            
         </div>
     </body>
-    <script>
-        function addTask(){
-            var textContent = document.getElementById("text1").value;
-            var list = document.createElement("li");
-            var textContentNode = document.createTextNode(textContent);
-            list.appendChild(textContentNode);
-            if(textContent != ""){
-                document.getElementById("taskList").appendChild(list);
-            }
-        }
+    <script src="todolist.js" type="text/Javascript">
+        
     </script>
 
 </html>
