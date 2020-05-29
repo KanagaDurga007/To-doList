@@ -1,6 +1,6 @@
 function addTask(){
     var textContent = document.getElementById("text1").value;
-    alert(String(textContent).length);
+    //alert(String(textContent).length);
     if(String(textContent).length > 0){
     var divisionList = document.createElement("div");
     divisionList.className = "seperateDiv";
